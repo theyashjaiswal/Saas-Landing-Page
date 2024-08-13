@@ -1,5 +1,7 @@
 "use client";
 
+import { CallToAction } from "@/sections/CallToAction";
+import { Footer } from "@/sections/Footer";
 import { Navbar } from "@/sections/Header";
 import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
@@ -30,7 +32,9 @@ export default function Home() {
       <LogoTicker theme={theme} />
       <ProductShowcase theme={theme} />
       <Pricing theme={theme} />
-      <Testimonials theme={theme}></Testimonials>
+      <Testimonials theme={theme} />
+      <CallToAction theme={theme} />
+      <Footer theme={theme} />
     </div>
   );
 }

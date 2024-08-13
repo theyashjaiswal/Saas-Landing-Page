@@ -55,7 +55,7 @@ const pricingTiers = [
 
 export const Pricing = (props: any) => {
   return (
-    <section className="py-24 bg-white dark:bg-black">
+    <section id="pricing" className="py-24 bg-white dark:bg-black">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
@@ -64,7 +64,7 @@ export const Pricing = (props: any) => {
             exclusive features.
           </p>
         </div>
-        <div className="pricingCards flex flex-col lg:flex-row gap-6 items-center my-10 lg:justify-center lg:items-end ">
+        <div className="pricingCards flex flex-col lg:flex-row gap-6 items-center  lg:justify-center lg:items-end ">
           {pricingTiers.map((card, index) => (
             <div
               className={twMerge(

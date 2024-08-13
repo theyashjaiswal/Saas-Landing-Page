@@ -109,7 +109,7 @@ const TestimonialCardsColumn = (props: {
 
 export const Testimonials = (props: any) => {
   return (
-    <section className="bg-white dark:bg-black pb-24 ">
+    <section id="testimonials" className="bg-white dark:bg-black ">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
@@ -121,7 +121,7 @@ export const Testimonials = (props: any) => {
             essential tool for users around the world.
           </p>
         </div>
-        <div className="flex justify-center gap-6 dark:text-white">
+        <div className="flex justify-center gap-6 dark:text-white mt-5">
           <TestimonialCardsColumn
             testimonials={firstCol}
           ></TestimonialCardsColumn>

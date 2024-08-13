@@ -59,16 +59,16 @@ export const Navbar: any = (props: any) => {
                   Features
                 </a>
                 <a
-                  href="#"
+                  href="#testimonials"
                   className=" hover:text-black/80 dark:hover:text-gray-100"
                 >
                   Customers
                 </a>
                 <a
-                  href="#"
+                  href="#pricing"
                   className=" hover:text-black/80 dark:hover:text-gray-100"
                 >
-                  Updates
+                  Pricing
                 </a>
                 <a
                   href="#"
@@ -109,32 +109,54 @@ export const Navbar: any = (props: any) => {
           </div>
           <ul className="mt-10 space-y-4 flex flex-col items-center justify-center  text-black/60 dark:bg-black dark:text-white text-2xl">
             <li className="px-4 py-2">
-              <a href="#" className=" hover:text-black/80 ">
+              <a
+                href="#"
+                className=" hover:text-black/80 dark:hover:text-white/60 "
+                onClick={toggleNavMenu}
+              >
                 About
               </a>
             </li>
             <li className="px-4 py-2 ">
-              <a href="#" className=" hover:text-black/80">
+              <a
+                href="#"
+                className=" hover:text-black/80 dark:hover:text-white/60"
+                onClick={toggleNavMenu}
+              >
                 Features
               </a>
             </li>
             <li className="px-4 py-2">
-              <a href="#" className=" hover:text-black/80">
+              <a
+                href="#testimonials"
+                className=" hover:text-black/80 dark:hover:text-white/60"
+                onClick={toggleNavMenu}
+              >
                 Customers
               </a>{" "}
             </li>
             <li className="px-4 py-2 ">
-              <a href="#" className=" hover:text-black/80">
-                Updates
+              <a
+                href="#pricing"
+                className=" hover:text-black/80 dark:hover:text-white/60"
+                onClick={toggleNavMenu}
+              >
+                Pricing
               </a>
             </li>
             <li className="px-4 py-2 ">
-              <a href="#" className="hover:text-black/80">
+              <a
+                href="#"
+                className="hover:text-black/80 dark:hover:text-white/60"
+                onClick={toggleNavMenu}
+              >
                 Help
               </a>
             </li>
             <li className="px-4 py-2 ">
-              <button className="btn btn-primary">Get for Free</button>
+              <button className="btn btn-primary" onClick={toggleNavMenu}>
+                Get for Free
+              </button>
             </li>
             <li className="px-4 py-2">
               <a onClick={toggleTheme} className="hover:text-black/80">

@@ -5,6 +5,7 @@ import { Hero } from "@/sections/Hero";
 import { LogoTicker } from "@/sections/LogoTicker";
 import { Pricing } from "@/sections/Pricing";
 import { ProductShowcase } from "@/sections/ProductShowcase";
+import { Testimonials } from "@/sections/Testimonials";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -29,6 +30,7 @@ export default function Home() {
       <LogoTicker theme={theme} />
       <ProductShowcase theme={theme} />
       <Pricing theme={theme} />
+      <Testimonials theme={theme}></Testimonials>
     </div>
   );
 }

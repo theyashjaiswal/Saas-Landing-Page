@@ -22,7 +22,7 @@ export const Navbar: any = (props: any) => {
 
   return (
     <>
-      <header className="sticky top-0 backdrop-blur-sm z-20 dark:bg-black">
+      <header className="sticky top-0 backdrop-blur-sm z-20 ">
         <div className="flex bg-black text-sm py-3 text-white  justify-center gap-3">
           <p className="text-white/60  hidden md:block">
             Streamline your workflow and boost your productivity

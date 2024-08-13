@@ -55,7 +55,7 @@ const pricingTiers = [
 
 export const Pricing = (props: any) => {
   return (
-    <section className="">
+    <section className="py-24 bg-white dark:bg-black">
       <div className="container">
         <div className="section-heading">
           <h2 className="section-title">Pricing</h2>
@@ -68,7 +68,7 @@ export const Pricing = (props: any) => {
           {pricingTiers.map((card, index) => (
             <div
               className={twMerge(
-                "max-w-xs w-full p-10 border border-[#F1F1F1] rounded-3xl shadow-[0_7px_14px_#EAEAEA] bg-white/50 dark:bg-black",
+                "card",
                 card.inverse === true &&
                   "border-black bg-black text-white dark:bg-white dark:text-black"
               )}

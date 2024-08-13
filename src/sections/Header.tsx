@@ -4,16 +4,12 @@ import ArrowRight from "@/assets/arrow-right.svg";
 import Logo from "@/assets/logosaas.png";
 import Image from "next/image";
 import MenuIcon from "@/assets/menu.svg";
-import { IoMdClose } from "react-icons/io";
-import { useEffect, useState } from "react";
-import { MdDarkMode } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
+import { useState } from "react";
 import { Moon, Sun, X } from "lucide-react";
 
 export const Navbar: any = (props: any) => {
   const { theme, toggleTheme } = props;
   const [isOpen, setIsOpen] = useState(false);
-
   const [navMenuState, setNavMenuState] = useState(false);
   const toggleNavMenu = () => {
     setIsOpen(!isOpen);
@@ -96,8 +92,8 @@ export const Navbar: any = (props: any) => {
       </header>
       <div>
         <div
-          className={`md:hidden fixed z-30 top-11 h-full w-full bg-[#EAEEFE] dark:bg-black transform transition-transform duration-300 ease-in-out ${
-            isOpen ? "translate-x-0" : "-translate-y-[100rem]"
+          className={`md:hidden fixed z-30 top-11 h-full w-full bg-[#EAEEFE] dark:bg-black transform transition-transform duration-500 ease-in-out ${
+            isOpen ? "translate-x-0" : "-translate-x-[100rem]"
           }`}
         >
           <div className="flex items-center justify-between py-5 mx-4">

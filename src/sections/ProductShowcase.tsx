@@ -3,10 +3,29 @@ import PyramidImage from "@/assets/pyramid.png";
 import TubeImage from "@/assets/tube.png";
 
 import Image from "next/image";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef } from "react";
 
 export const ProductShowcase = (props: any) => {
+  const productRef = useRef(null);
+  const { scrollYProgress } = useScroll({
+    target: productRef,
+    offset: ["start end", "end start"],
+  });
+
+  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+
+  useMotionValueEvent(translateY, "change", (latestValue) => {
+    console.log("mouse", latestValue);
+  });
+
   return (
-    <section id="product" className="py-24 overflow-x-hidden">
+    <section ref={productRef} id="product" className="py-24 overflow-x-hidden">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
@@ -22,18 +41,20 @@ export const ProductShowcase = (props: any) => {
         </div>
         <div className="relative">
           <Image src={ProductImage} alt="product image" className="mt-10" />
-          <Image
-            src={PyramidImage}
+          <motion.img
+            src={PyramidImage.src}
             alt="pyramid image"
             height={262}
             width={262}
             className="hidden md:block absolute -right-36 -top-32"
+            style={{ rotate: 30, translateY: translateY }}
           />
-          <Image
-            src={TubeImage}
+          <motion.img
+            src={TubeImage.src}
             alt="tube image"
             height={248}
             className="hidden md:block absolute bottom-24 -left-36"
+            style={{ translateY: translateY }}
           />
         </div>
       </div>

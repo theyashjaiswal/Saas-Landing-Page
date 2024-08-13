@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export const ProductShowcase = (props: any) => {
   return (
-    <section className="py-24">
+    <section id="product" className="py-24 overflow-x-hidden">
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">

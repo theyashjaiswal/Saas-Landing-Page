@@ -8,7 +8,10 @@ import SocialYoutube from "@/assets/social-youtube.svg";
 
 export const Footer = (props: any) => {
   return (
-    <footer className="py-10 bg-black text-sm text-[#BCBCBC] text-center">
+    <footer
+      id="footer"
+      className="py-10 bg-black text-sm text-[#BCBCBC] text-center"
+    >
       <div className="container">
         <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:left-0 before:right-0 before:blur-md before:bg-gradient-to-r before:from-[#F87BFF] before:via-[#FB92CF] before:to-[#2FD8FE] before:absolute">
           <Image src={Logo} alt="logo" height={40} className="relative"></Image>
@@ -17,16 +20,16 @@ export const Footer = (props: any) => {
           <a href="https://yashjaiswal.com" className="  hover:text-gray-100">
             About
           </a>
-          <a href="#" className="hover:text-gray-100">
+          <a href="#product" className="hover:text-gray-100">
             Features
           </a>
-          <a href="#" className="hover:text-gray-100">
+          <a href="#testimonials" className="hover:text-gray-100">
             Customers
           </a>
           <a href="#pricing" className="hover:text-gray-100">
             Pricing
           </a>
-          <a href="#" className="hover:text-gray-100">
+          <a href="#footer" className="hover:text-gray-100">
             Help
           </a>
         </nav>

@@ -53,7 +53,7 @@ export const Navbar: any = (props: any) => {
                   About
                 </a>
                 <a
-                  href="#"
+                  href="#product"
                   className=" hover:text-black/80 dark:hover:text-gray-100"
                 >
                   Features
@@ -71,7 +71,7 @@ export const Navbar: any = (props: any) => {
                   Pricing
                 </a>
                 <a
-                  href="#"
+                  href="#footer"
                   className="hover:text-black/80 dark:hover:text-gray-100"
                 >
                   Help
@@ -119,7 +119,7 @@ export const Navbar: any = (props: any) => {
             </li>
             <li className="px-4 py-2 ">
               <a
-                href="#"
+                href="#product"
                 className=" hover:text-black/80 dark:hover:text-white/60"
                 onClick={toggleNavMenu}
               >
@@ -146,7 +146,7 @@ export const Navbar: any = (props: any) => {
             </li>
             <li className="px-4 py-2 ">
               <a
-                href="#"
+                href="#footer"
                 className="hover:text-black/80 dark:hover:text-white/60"
                 onClick={toggleNavMenu}
               >

@@ -47,7 +47,7 @@ export const ProductShowcase = (props: any) => {
             height={262}
             width={262}
             className="hidden md:block absolute -right-36 -top-32"
-            style={{ rotate: 30, translateY: translateY }}
+            style={{ translateY: translateY }}
           />
           <motion.img
             src={TubeImage.src}

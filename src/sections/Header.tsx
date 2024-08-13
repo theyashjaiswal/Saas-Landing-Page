@@ -1,0 +1,153 @@
+"use client";
+
+import ArrowRight from "@/assets/arrow-right.svg";
+import Logo from "@/assets/logosaas.png";
+import Image from "next/image";
+import MenuIcon from "@/assets/menu.svg";
+import { IoMdClose } from "react-icons/io";
+import { useEffect, useState } from "react";
+import { MdDarkMode } from "react-icons/md";
+import { MdOutlineLightMode } from "react-icons/md";
+import { Moon, Sun, X } from "lucide-react";
+
+export const Navbar: any = (props: any) => {
+  const { theme, toggleTheme } = props;
+  const [isOpen, setIsOpen] = useState(false);
+
+  const [navMenuState, setNavMenuState] = useState(false);
+  const toggleNavMenu = () => {
+    setIsOpen(!isOpen);
+    setNavMenuState(!navMenuState);
+  };
+
+  return (
+    <>
+      <header className="sticky top-0 backdrop-blur-sm z-20 dark:bg-black">
+        <div className="flex bg-black text-sm py-3 text-white  justify-center gap-3">
+          <p className="text-white/60  hidden md:block">
+            Streamline your workflow and boost your productivity
+          </p>
+          <div className="inline-flex gap-1 items-center">
+            <p> Get started for free</p>
+            <ArrowRight className="h-4 w-4 inline-flex justify-center items-center" />
+          </div>
+        </div>
+        <div className="py-5 mx-4">
+          <div className="nav-container dark:bg-transparent">
+            <div className="flex items-center justify-between">
+              <Image src={Logo} alt="Saas Logo" height={40} width={40} />
+              <div
+                onClick={toggleNavMenu}
+                className="hover:ring-4 ring-[#222]/50 "
+              >
+                {!navMenuState ? (
+                  <MenuIcon className="h-5 w-5 md:hidden  dark:text-white" />
+                ) : null}
+              </div>
+
+              <nav className="hidden bg-[#EAEEFE] dark:bg-transparent dark:dark md:bg-transparent md:h-fit md:flex md:flex-row md:top-0 md:relative gap-6 text-black/60 dark:text-white/80 items-center">
+                <a
+                  href="#"
+                  className=" hover:text-black/80 dark:hover:text-gray-100"
+                >
+                  About
+                </a>
+                <a
+                  href="#"
+                  className=" hover:text-black/80 dark:hover:text-gray-100"
+                >
+                  Features
+                </a>
+                <a
+                  href="#"
+                  className=" hover:text-black/80 dark:hover:text-gray-100"
+                >
+                  Customers
+                </a>
+                <a
+                  href="#"
+                  className=" hover:text-black/80 dark:hover:text-gray-100"
+                >
+                  Updates
+                </a>
+                <a
+                  href="#"
+                  className="hover:text-black/80 dark:hover:text-gray-100"
+                >
+                  Help
+                </a>
+                <button className="btn btn-primary">Get for Free</button>
+
+                <button
+                  onClick={toggleTheme}
+                  className="hover:text-black/80 hover:border hover:rounded-lg"
+                >
+                  {theme === "dark" ? (
+                    <Sun className="text-white" />
+                  ) : (
+                    <Moon className="text-black" />
+                  )}
+                </button>
+              </nav>
+            </div>
+            <div />
+          </div>
+        </div>
+      </header>
+      <div>
+        <div
+          className={`md:hidden fixed z-30 top-11 h-full w-full bg-[#EAEEFE] dark:bg-black transform transition-transform duration-300 ease-in-out ${
+            isOpen ? "translate-x-0" : "-translate-y-[100rem]"
+          }`}
+        >
+          <div className="flex items-center justify-between py-5 mx-4">
+            <Image src={Logo} alt="Saas Logo" height={40} width={40} />
+            <X
+              onClick={toggleNavMenu}
+              className="h-6 w-6 md:hidden hover:ring-4 ring-[#222]/50  dark:text-white"
+            />
+          </div>
+          <ul className="mt-10 space-y-4 flex flex-col items-center justify-center  text-black/60 dark:bg-black dark:text-white text-2xl">
+            <li className="px-4 py-2">
+              <a href="#" className=" hover:text-black/80 ">
+                About
+              </a>
+            </li>
+            <li className="px-4 py-2 ">
+              <a href="#" className=" hover:text-black/80">
+                Features
+              </a>
+            </li>
+            <li className="px-4 py-2">
+              <a href="#" className=" hover:text-black/80">
+                Customers
+              </a>{" "}
+            </li>
+            <li className="px-4 py-2 ">
+              <a href="#" className=" hover:text-black/80">
+                Updates
+              </a>
+            </li>
+            <li className="px-4 py-2 ">
+              <a href="#" className="hover:text-black/80">
+                Help
+              </a>
+            </li>
+            <li className="px-4 py-2 ">
+              <button className="btn btn-primary">Get for Free</button>
+            </li>
+            <li className="px-4 py-2">
+              <a onClick={toggleTheme} className="hover:text-black/80">
+                {theme === "dark" ? (
+                  <Sun className="text-white" />
+                ) : (
+                  <Moon className="text-black" />
+                )}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </>
+  );
+};

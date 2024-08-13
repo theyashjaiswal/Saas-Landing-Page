@@ -1,5 +1,12 @@
 import CheckIcon from "@/assets/check.svg";
 import { twMerge } from "tailwind-merge";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useMotionValueEvent,
+} from "framer-motion";
+import { useRef } from "react";
 
 const pricingTiers = [
   {
@@ -64,7 +71,7 @@ export const Pricing = (props: any) => {
             exclusive features.
           </p>
         </div>
-        <div className="pricingCards flex flex-col lg:flex-row gap-6 items-center  lg:justify-center lg:items-end ">
+        <div className="pricingCards mt-6 flex flex-col lg:flex-row gap-6 items-center  lg:justify-center lg:items-end ">
           {pricingTiers.map((card, index) => (
             <div
               className={twMerge(
@@ -86,9 +93,18 @@ export const Pricing = (props: any) => {
 
                 {card?.popular && (
                   <div className="inline-flex items-center text-sm rounded-xl px-4 py-1.5 border border-white/20 dark:invert">
-                    <span className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF)] text-transparent bg-clip-text font-medium">
+                    <motion.span
+                      className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+                      animate={{ backgroundPositionX: "100%" }}
+                      transition={{
+                        repeat: Infinity,
+                        ease: "linear",
+                        repeatType: "loop",
+                        duration: 1.2,
+                      }}
+                    >
                       Popular
-                    </span>
+                    </motion.span>
                   </div>
                 )}
               </div>

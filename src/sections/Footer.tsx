@@ -13,7 +13,7 @@ export const Footer = (props: any) => {
       className="py-10 bg-black text-sm text-[#BCBCBC] text-center"
     >
       <div className="container">
-        <div className="inline-flex relative before:content-[''] before:top-2 before:bottom-0 before:left-0 before:right-0 before:blur-md before:bg-gradient-to-r before:from-[#F87BFF] before:via-[#FB92CF] before:to-[#2FD8FE] before:absolute">
+        <div className="inline-flex relative before:content-[''] before:top-2 before:rounded-3xl before:bottom-0 before:left-0 before:right-0 before:blur-md before:bg-gradient-to-r before:from-[#F87BFF] before:via-[#FB92CF] before:to-[#2FD8FE] before:absolute">
           <Image src={Logo} alt="logo" height={40} className="relative"></Image>
         </div>
         <nav className="flex flex-col md:flex-row md:justify-center mt-6  gap-6">
@@ -23,11 +23,11 @@ export const Footer = (props: any) => {
           <a href="#product" className="hover:text-gray-100">
             Features
           </a>
-          <a href="#testimonials" className="hover:text-gray-100">
-            Customers
-          </a>
           <a href="#pricing" className="hover:text-gray-100">
             Pricing
+          </a>
+          <a href="#testimonials" className="hover:text-gray-100">
+            Customers
           </a>
           <a href="#footer" className="hover:text-gray-100">
             Help

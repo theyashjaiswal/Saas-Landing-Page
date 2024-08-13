@@ -21,12 +21,11 @@ export default function Home() {
   }, [theme]);
 
   function toggleTheme(theme: any) {
-    console.log(theme, "THEME!!!");
     setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
   }
 
   return (
-    <div className=" dark:bg-gradient-to-b dark:from-black dark:to-[#001E80]">
+    <div className="overflow-hidden dark:bg-gradient-to-b dark:from-black dark:to-[#001E80]">
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       <Hero theme={theme} />
       <LogoTicker theme={theme} />

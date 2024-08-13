@@ -24,9 +24,9 @@ export const LogoTicker = (props: any) => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
-  useMotionValueEvent(translateY, "change", (latestValue) => {
-    console.log("mouse", latestValue);
-  });
+  // useMotionValueEvent(translateY, "change", (latestValue) => {
+  //   console.log("mouse", latestValue);
+  // });
 
   return (
     <section ref={logoRef} className="py-8 md:py-12 bg-white dark:bg-black">

@@ -32,59 +32,67 @@ export const Navbar: any = (props: any) => {
           <div className="nav-container dark:bg-transparent">
             <div className="flex items-center justify-between">
               <Image src={Logo} alt="Saas Logo" height={40} width={40} />
-              <div
-                onClick={toggleNavMenu}
-                className="hover:ring-4 ring-[#222]/50 "
-              >
-                {!navMenuState ? (
-                  <MenuIcon className="h-5 w-5 md:hidden  dark:text-white" />
-                ) : null}
-              </div>
-
-              <nav className="hidden bg-[#EAEEFE] dark:bg-transparent dark:dark md:bg-transparent md:h-fit md:flex md:flex-row md:top-0 md:relative gap-6 text-black/60 dark:text-white/80 items-center">
-                <a
-                  href="#"
-                  className=" hover:text-black/80 dark:hover:text-gray-100"
-                >
-                  About
-                </a>
-                <a
-                  href="#product"
-                  className=" hover:text-black/80 dark:hover:text-gray-100"
-                >
-                  Features
-                </a>
-                <a
-                  href="#testimonials"
-                  className=" hover:text-black/80 dark:hover:text-gray-100"
-                >
-                  Customers
-                </a>
-                <a
-                  href="#pricing"
-                  className=" hover:text-black/80 dark:hover:text-gray-100"
-                >
-                  Pricing
-                </a>
-                <a
-                  href="#footer"
-                  className="hover:text-black/80 dark:hover:text-gray-100"
-                >
-                  Help
-                </a>
-                <button className="btn btn-primary">Get for Free</button>
-
+              <div className="flex flex-row gap-2 items-center">
                 <button
-                  onClick={toggleTheme}
-                  className="hover:text-black/80 hover:border hover:rounded-lg"
+                  className="lg:hidden btn btn-primary"
+                  onClick={toggleNavMenu}
                 >
-                  {theme === "dark" ? (
-                    <Sun className="text-white" />
-                  ) : (
-                    <Moon className="text-black" />
-                  )}
+                  Get Started
                 </button>
-              </nav>
+                <div
+                  onClick={toggleNavMenu}
+                  className="hover:ring-4 ring-[#222]/50 "
+                >
+                  {!navMenuState && (
+                    <MenuIcon className="h-5 w-5 md:hidden  dark:text-white transition-transform duration-1000" />
+                  )}
+                </div>
+                <nav className="hidden bg-[#EAEEFE] dark:bg-transparent dark:dark md:bg-transparent md:h-fit md:flex md:flex-row md:top-0 md:relative gap-6 text-black/60 dark:text-white/80 items-center">
+                  <a
+                    href="#"
+                    className=" hover:text-black/80 dark:hover:text-gray-100"
+                  >
+                    About
+                  </a>
+                  <a
+                    href="#product"
+                    className=" hover:text-black/80 dark:hover:text-gray-100"
+                  >
+                    Features
+                  </a>
+                  <a
+                    href="#pricing"
+                    className=" hover:text-black/80 dark:hover:text-gray-100"
+                  >
+                    Pricing
+                  </a>
+                  <a
+                    href="#testimonials"
+                    className=" hover:text-black/80 dark:hover:text-gray-100"
+                  >
+                    Customers
+                  </a>
+
+                  <a
+                    href="#footer"
+                    className="hover:text-black/80 dark:hover:text-gray-100"
+                  >
+                    Help
+                  </a>
+                  <button className="btn btn-primary">Get Started</button>
+
+                  <button
+                    onClick={toggleTheme}
+                    className="hover:text-black/80 hover:border hover:rounded-lg"
+                  >
+                    {theme === "dark" ? (
+                      <Sun className="text-white" />
+                    ) : (
+                      <Moon className="text-black" />
+                    )}
+                  </button>
+                </nav>
+              </div>
             </div>
             <div />
           </div>
@@ -122,15 +130,7 @@ export const Navbar: any = (props: any) => {
                 Features
               </a>
             </li>
-            <li className="px-4 py-2">
-              <a
-                href="#testimonials"
-                className=" hover:text-black/80 dark:hover:text-white/60"
-                onClick={toggleNavMenu}
-              >
-                Customers
-              </a>{" "}
-            </li>
+
             <li className="px-4 py-2 ">
               <a
                 href="#pricing"
@@ -139,6 +139,15 @@ export const Navbar: any = (props: any) => {
               >
                 Pricing
               </a>
+            </li>
+            <li className="px-4 py-2">
+              <a
+                href="#testimonials"
+                className=" hover:text-black/80 dark:hover:text-white/60"
+                onClick={toggleNavMenu}
+              >
+                Customers
+              </a>{" "}
             </li>
             <li className="px-4 py-2 ">
               <a
@@ -151,7 +160,7 @@ export const Navbar: any = (props: any) => {
             </li>
             <li className="px-4 py-2 ">
               <button className="btn btn-primary" onClick={toggleNavMenu}>
-                Get for Free
+                Get Started
               </button>
             </li>
             <li className="px-4 py-2">

@@ -18,14 +18,17 @@ export const ProductShowcase = (props: any) => {
     offset: ["start end", "end start"],
   });
 
-  const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
+  const translateY = useTransform(scrollYProgress, [0, 1], [200, -200]);
 
-  useMotionValueEvent(translateY, "change", (latestValue) => {
-    console.log("mouse", latestValue);
-  });
+  // useMotionValueEvent(translateY, "change", (latestValue) => {
+  // });
 
   return (
-    <section ref={productRef} id="product" className="py-24 overflow-x-hidden">
+    <section
+      ref={productRef}
+      id="product"
+      className="py-24 overflow-x-hidden bg-gradient-to-b from-[#FFFFFF] to-[#D2DCFF] dark:to-[#000000] dark:from-[#001E80] ]"
+    >
       <div className="container">
         <div className="section-heading">
           <div className="flex justify-center">
@@ -47,13 +50,14 @@ export const ProductShowcase = (props: any) => {
             height={262}
             width={262}
             className="hidden md:block absolute -right-36 -top-32"
-            style={{ translateY: translateY }}
+            style={{ translateY: translateY, rotate: translateY }}
           />
           <motion.img
             src={TubeImage.src}
             alt="tube image"
             height={248}
-            className="hidden md:block absolute bottom-24 -left-36"
+            width={248}
+            className="hidden lg:block absolute bottom-24 -left-36"
             style={{ translateY: translateY }}
           />
         </div>

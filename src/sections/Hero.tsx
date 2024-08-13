@@ -21,9 +21,9 @@ export const Hero: any = (props: any) => {
 
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
-  useMotionValueEvent(translateY, "change", (latestValue) => {
-    console.log("mouse", latestValue);
-  });
+  // useMotionValueEvent(translateY, "change", (latestValue) => {
+  //   console.log("mouse", latestValue);
+  // });
   return (
     <section
       ref={heroRef}
@@ -43,7 +43,7 @@ export const Hero: any = (props: any) => {
               successes.
             </p>
             <div className="flex gap-1 items-center mt-[1.875rem]">
-              <button className="btn btn-primary">Get for free</button>
+              <button className="btn btn-primary">Get Started</button>
               <button className="btn btn-text gap-1">
                 <span>Learn more</span>
                 <ArrowIcon className="h-5 w-5" />
@@ -56,6 +56,7 @@ export const Hero: any = (props: any) => {
               alt="Cog Image"
               className="md:absolute md:h-full md:w-auto md:max-w-none md:-left-6 lg:left-0 -translate-y-[30px]"
               animate={{ translateY: [-30, 30] }}
+              style={{ rotate: translateY }}
               transition={{
                 repeat: Infinity,
                 repeatType: "mirror",

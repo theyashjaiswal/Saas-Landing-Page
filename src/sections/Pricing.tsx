@@ -119,8 +119,8 @@ export const Pricing = (props: any) => {
                 </span>
                 <span
                   className={twMerge(
-                    "tracking-tight font-bold text-white/50 dark:text-white/60",
-                    card?.inverse === true && "dark:text-black/60"
+                    "tracking-tight font-bold text-black/60 dark:text-white/60",
+                    card?.inverse === true && "text-white/60 dark:text-black/70"
                   )}
                 >
                   /month

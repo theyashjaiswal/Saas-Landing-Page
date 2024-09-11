@@ -23,26 +23,29 @@ Check out the live demo here:
 ## **References**
 
 All assets and design inspiration used in this project were sourced from the Tribe Starter Kit.  
-For more details, please visit their official website:  
-[https://www.tribe.so/starter-kit](https://www.tribe.so/starter-kit)
+[Starter Kit](https://www.youtube.com/@frontend-tribe)
 
 ## **Getting Started**
 
 To run this project locally:
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/your-username/your-repo.git
 
 2. Navigate into the project directory:
+
   ```bash
   cd saas-landing-page
 
 3. Install dependencies:
+
   ```bash
    npm install
 
 4.   Run the development server:
+
   ```bash
   npm run dev
 

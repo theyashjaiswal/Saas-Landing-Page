@@ -25,35 +25,29 @@ Check out the live demo here:
 All assets and design inspiration used in this project were sourced from the Tribe Starter Kit.  
 [Starter Kit](https://www.youtube.com/@frontend-tribe)
 
-## **Getting Started**
+## Instructions to Run Locally
 
-To run this project locally:
-
-1. Clone the repository:
+1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone <repository-link>
+   cd streamify-dashboard
 
-2. Navigate into the project directory:
+2. **Install dependencies:**
 
-  ```bash
-  cd saas-landing-page
-
-3. Install dependencies:
-
-  ```bash
+   ```bash
    npm install
 
-4.   Run the development server:
+3. **Run the development server:**
 
-  ```bash
-  npm run dev
+   ```bash
+   npm start
 
-The app will be available at http://localhost:3000.
+4. **View the application in your browser:**
+   Open http://localhost:3000 to view the app locally.
 
-## **Deployment**
-
-This project is deployed on Vercel. To deploy your own version:
+**Deploying the app (optional):**
+You can deploy this app using services like Vercel or Netlify by connecting your repository and following the hosting service’s deployment instructions.
 
 ## **Contributions**
 Contributions are welcome! Feel free to submit a pull request or open an issue for any feature requests or bug reports.

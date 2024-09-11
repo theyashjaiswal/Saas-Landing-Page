@@ -2,7 +2,7 @@
 
 This is a landing page project inspired by the Tribe Starter Kit. The project is built using modern web development technologies including **Next.js**, **Tailwind CSS**, and **Framer Motion** for animations.
 
-## **Live Demo**
+## **Hosted Link**
 
 Check out the live demo here:  
 [https://saas-landing-yash.vercel.app/](https://saas-landing-yash.vercel.app/)

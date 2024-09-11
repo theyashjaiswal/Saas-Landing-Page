@@ -40,15 +40,21 @@ All assets and design inspiration used in this project were sourced from the Tri
    git clone <repository-link>
    cd streamify-dashboard
 
+   ```
+
 2. **Install dependencies:**
 
    ```bash
    npm install
 
+   ```
+
 3. **Run the development server:**
 
    ```bash
    npm start
+
+   ```
 
 4. **View the application in your browser:**
    Open http://localhost:3000 to view the app locally.
@@ -57,7 +63,9 @@ All assets and design inspiration used in this project were sourced from the Tri
 You can deploy this app using services like Vercel or Netlify by connecting your repository and following the hosting service’s deployment instructions.
 
 ## **Contributions**
+
 Contributions are welcome! Feel free to submit a pull request or open an issue for any feature requests or bug reports.
 
 ## **License**
+
 This project is licensed under the MIT License.

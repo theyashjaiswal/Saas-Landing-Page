@@ -7,6 +7,13 @@ This is a landing page project inspired by the Tribe Starter Kit. The project is
 Check out the live demo here:  
 [https://saas-landing-yash.vercel.app/](https://saas-landing-yash.vercel.app/)
 
+- Desktop :
+  - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 25 PM" src="https://github.com/user-attachments/assets/5d764f15-309d-437c-914f-080b3b4b37e6">
+  - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 29 PM" src="https://github.com/user-attachments/assets/4d5012f2-1cc0-4a4a-84f5-669001fea189">
+  - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 33 PM" src="https://github.com/user-attachments/assets/8a644d89-16f2-4911-a81f-45859fb41b0c">
+  - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 37 PM" src="https://github.com/user-attachments/assets/3b1c7866-96d8-45a4-9061-d83c05834deb">
+  - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 40 PM" src="https://github.com/user-attachments/assets/ee48eb33-148c-45d2-ac26-c14f28ffb548">
+
 ## **Technologies Used**
 
 - **Next.js**: A React framework for building fast and scalable server-side rendered web applications.

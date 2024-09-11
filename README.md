@@ -9,7 +9,7 @@ Check out the live demo here:
 
 ## **Hosted Link**
 **Screenshots**
-Desktop - 
+- Desktop:
 - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 25 PM" src="https://github.com/user-attachments/assets/5d764f15-309d-437c-914f-080b3b4b37e6">
 - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 29 PM" src="https://github.com/user-attachments/assets/4d5012f2-1cc0-4a4a-84f5-669001fea189">
 - <img width="1792" alt="Screenshot 2024-09-11 at 2 34 33 PM" src="https://github.com/user-attachments/assets/8a644d89-16f2-4911-a81f-45859fb41b0c">
